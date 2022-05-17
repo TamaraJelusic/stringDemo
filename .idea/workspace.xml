@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef9a16f3-ec89-476a-9e72-50d9aa6452f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/accenture/salsasyntax/MatchAndContains.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/accenture/salsasyntax/Matches.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/accenture/salsasyntax/Matches.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/accenture/salsasyntax/MatchesAndContains.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +43,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.StringBasicMethods">
+  <component name="RunManager" selected="Application.Matches">
+    <configuration name="Matches" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.accenture.salsasyntax.Matches" />
+      <module name="stringdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.accenture.salsasyntax.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StringBasicMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.accenture.salsasyntax.StringBasicMethods" />
       <module name="stringdemo" />
@@ -71,6 +85,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Matches" />
         <item itemvalue="Application.StringBasicMethods" />
         <item itemvalue="Application.StringBuilderDemo" />
       </list>
