@@ -51,12 +51,29 @@ public class StringBuilderDemo {
 
     }
 
+    //amount of characters storage size in string builder.
+    //An empty StringBuilder class contains the default 16 character capacity
+    //If the number of the character increases from its current capacity, it increases the capacity by (oldcapacity*2)+2
+    private static void capacityDemo(){
+        StringBuilder sb=new StringBuilder();//16
+        System.out.println(sb.capacity());
+        sb.append("Hello. ");
+        System.out.println(sb.capacity());//16
+        sb.append("I am a longer string. ");
+        System.out.println(sb.capacity());//now (16*2)+2=34 i.e (oldcapacity*2)+2
+        sb.append("blabla");
+        System.out.println(sb.capacity());//now (34*2)+2=70
+    }
+
     public static void main(String[] args) {
         System.out.println("Append demo:");
         appendDemo();
         System.out.println("Insert demo:");
         insertDemo();
+        System.out.println("Capacity demo: ");
+        capacityDemo();
     }
+
 
         /*some other methods:
 
