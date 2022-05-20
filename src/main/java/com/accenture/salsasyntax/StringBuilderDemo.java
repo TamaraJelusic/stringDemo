@@ -22,17 +22,17 @@ public class StringBuilderDemo {
             builder.append(s3);
             builder.append(s4);
 
-            System.out.println(builder);
+            System.out.println(builder); //I am a string made with a builder.
         }
 
         {
             StringBuilder builder = new StringBuilder("This is my starting point.");
 
-            String s1 = " And I can append to it";
+            String s1 = " And I can append to it.";
 
             builder.append(s1);
 
-            System.out.println(builder);
+            System.out.println(builder); //This is my starting point. And I can append to it.
         }
 
     }
@@ -40,14 +40,14 @@ public class StringBuilderDemo {
 
     private static void insertDemo() {
         StringBuilder builder = new StringBuilder();
-        String s1 = "I am string";
+        String s1 = "I am string.";
         String s2 = "a ";
 
         builder.append(s1);
-        System.out.println(builder);
+        System.out.println(builder); //I am string.
 
         builder.insert(5,s2);
-        System.out.println(builder);
+        System.out.println(builder); //I am a string.
 
     }
 
@@ -63,6 +63,8 @@ public class StringBuilderDemo {
         System.out.println(sb.capacity());//now (16*2)+2=34 i.e (oldcapacity*2)+2
         sb.append("blabla");
         System.out.println(sb.capacity());//now (34*2)+2=70
+
+        //StringBuilder(int capacity) - we can set the initial capacity
     }
 
     public static void main(String[] args) {
@@ -78,8 +80,10 @@ public class StringBuilderDemo {
         /*some other methods:
 
      reverse(), toString(), length()
-     delete(int startIndex, int endIndex),
+     delete(int startIndex, int endIndex), (the endIndex is excluded)
      replace(int startIndex, int endIndex, String str)
+
+     .equals() is not overriden; we can use toString() and then use equals() to compare two StringBuilder objects;
 
         */
 
